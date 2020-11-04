@@ -18,3 +18,14 @@
   height: 360px;
   background: aliceblue;
 }
+
+.buttons-wrapper {
+  display: flex;
+  width: 640px;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.buttons-wrapper > button {
+  margin: 5px;
+}

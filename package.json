@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@cycjimmy/jsmpeg-player": "^4.0.1",
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2",
-    "react-scripts": "3.2.0"
+    "@cycjimmy/jsmpeg-player": "^5.0.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "4.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -14,7 +14,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "homepage":".",
+  "homepage": ".",
   "eslintConfig": {
     "extends": "react-app"
   },

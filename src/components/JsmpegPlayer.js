@@ -22,12 +22,32 @@ export default class JsmpegPlayer extends Component {
   componentDidMount() {
     // Reference documentation, pay attention to the order of parameters.
     // https://github.com/cycjimmy/jsmpeg-player#usage
-    new JSMpeg.VideoElement(
+    this.video = new JSMpeg.VideoElement(
       this.els.videoWrapper,
       this.props.videoUrl,
       this.props.options,
       this.props.overlayOptions
     );
+
+    if (this.props.onRef) {
+      this.props.onRef(this)
+    }
+  };
+
+  play() {
+    this.video.play();
+  };
+
+  pause() {
+    this.video.pause();
+  };
+
+  stop() {
+    this.video.stop();
+  };
+
+  destroy() {
+    this.video.destroy();
   };
 };
 
